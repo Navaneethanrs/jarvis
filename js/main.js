@@ -32,7 +32,11 @@
     toggle.classList.contains("open") ? closeMenu() : openMenu();
   });
   scrim?.addEventListener("click", closeMenu);
-  panel?.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeMenu));
+  panel?.querySelectorAll("a").forEach((a) => {
+    a.addEventListener("click", () => {
+      setTimeout(closeMenu, 150);
+    });
+  });
 
   // reveal-on-scroll
   const revealEls = document.querySelectorAll(".reveal");

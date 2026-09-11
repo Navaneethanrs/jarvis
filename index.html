@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JARVIS'26 — Internet Symposium</title>
+<meta name="description" content="JARVIS'26 — a one-day internet symposium with 4 tech events and 3 non-tech events. September 21.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">J</span>
+      <span>JARVIS'26<br><small>Internet Symposium</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="tech-events.html">Tech Events</a>
+      <a href="non-tech-events.html">Non-Tech Events</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-small" data-register="GENERAL" href="#">Register Now</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="scrim"></div>
+<nav class="mobile-panel">
+  <a href="index.html">Home</a>
+  <a href="tech-events.html">Tech Events</a>
+  <a href="non-tech-events.html">Non-Tech Events</a>
+  <a class="btn btn-primary btn-block" data-register="GENERAL" href="#">Register Now</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">MADC CLUB PRESENTS</div>
+      <h1>JARVIS<span class="accent">'26</span></h1>
+      <p class="hero-tag">A one-day internet symposium bringing MADC developers together for coding battles, UI challenges and mobile app sprints — 4 tech events, 3 non-tech events, one badge to earn.</p>
+
+      <div class="hero-meta">
+        <span><span class="dot"></span> <b>Sept 21, 2026</b></span>
+        <span><span class="dot"></span> MADC Club, NGCE</span>
+        <span><span class="dot"></span> 7 events · pick 1 per slot</span>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" data-register="GENERAL" href="#">Register Now</a>
+        <a class="btn btn-outline" href="tech-events.html">View Events</a>
+      </div>
+
+      <div class="countdown" aria-label="Countdown to JARVIS'26">
+        <div class="countdown-cell"><strong data-cd-days>00</strong><span>DAYS</span></div>
+        <div class="countdown-cell"><strong data-cd-hours>00</strong><span>HOURS</span></div>
+        <div class="countdown-cell"><strong data-cd-mins>00</strong><span>MINS</span></div>
+        <div class="countdown-cell"><strong data-cd-secs>00</strong><span>SECS</span></div>
+      </div>
+      <div class="countdown-live"><span class="pulse"></span> <span data-cd-live>Registrations open · September 21</span></div>
+    </div>
+
+    <div class="hero-stage">
+      <canvas id="hero-canvas"></canvas>
+      <div class="stage-hint">MOVE TO EXPLORE</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">ABOUT THE EVENT</div>
+      <h2>What is JARVIS'26?</h2>
+      <p>JARVIS'26 is the MADC Club's flagship internet symposium — a full day of building, debugging and pitching. Every participant takes on one tech event from each slot, plus one non-tech event, and walks away with a certificate and a shot at real prizes.</p>
+    </div>
+
+    <div class="feature-grid reveal">
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <h4>4 Tech Events</h4>
+        <p>Startup pitching, debugging, full-stack coding and UI/UX — across two slots.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🎭</div>
+        <h4>3 Non-Tech Events</h4>
+        <p>Quick wit, sharp arguments and sharper memory — a break from the screen.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🏆</div>
+        <h4>Real Prizes</h4>
+        <p>Cash prizes, certificates for all, and a direct hackathon slot for top pitches.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🧩</div>
+        <h4>Slot System</h4>
+        <p>Pick one event from Slot 1 and one from Slot 2 — no clashes, no overlap.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🤖</div>
+        <h4>AI-Friendly</h4>
+        <p>AI tools are welcomed in Stack & Switch and UI/UX — build the way you actually build.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📜</div>
+        <h4>Certified</h4>
+        <p>Every participant leaves with a certificate, win or lose.</p>
+      </div>
+    </div>
+
+    <div class="stat-strip reveal">
+      <div><strong>7</strong><span>TOTAL EVENTS</span></div>
+      <div><strong>2</strong><span>TECH SLOTS</span></div>
+      <div><strong>3</strong><span>NON-TECH EVENTS</span></div>
+      <div><strong>1</strong><span>HACKATHON SEAT AT STAKE</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ROADMAP ===== -->
+<section class="section section-dark" id="roadmap">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">OFFICIAL MADC / MADC EVENTS PLAN · ACADEMIC YEAR 2026-2027</div>
+      <h2>2026-2027 Events Roadmap</h2>
+      <p>Step-by-step technical journey leading to our grand finale: <strong>SPECTRA'27 National Hackathon</strong></p>
+    </div>
+
+    <div class="roadmap-timeline reveal">
+      
+      <!-- Milestone 01 -->
+      <div class="timeline-item">
+        <div class="timeline-badge">01</div>
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <span class="timeline-tag">WORKSHOP</span>
+            <span class="timeline-date">August 27th Week, 2026</span>
+          </div>
+          <h3>UI/UX Design Studio</h3>
+          <div class="timeline-sub">UI/UX & Figma Workshop</div>
+          <p class="timeline-desc">Hands-on design workshop covering wireframing, interactive prototyping, design systems, and mobile UI/UX principles in Figma.</p>
+          <div class="timeline-foot">
+            <span>Self-supported</span>
+            <span class="timeline-status">Status: Official Plan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Milestone 02 -->
+      <div class="timeline-item">
+        <div class="timeline-badge">02</div>
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <span class="timeline-tag">SYMPOSIUM</span>
+            <span class="timeline-date">September 21st Week, 2026</span>
+          </div>
+          <h3>JARVIS'26</h3>
+          <div class="timeline-sub">Internet Symposium</div>
+          <p class="timeline-desc">Internal technical symposium bringing MADC developers together for coding battles, UI challenges, and mobile app sprints.</p>
+          <div class="timeline-foot">
+            <span>Self-supported</span>
+            <span class="timeline-status">Status: Official Plan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Milestone 03 -->
+      <div class="timeline-item theme-navy">
+        <div class="timeline-badge">03</div>
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <span class="timeline-tag">WORKSHOP</span>
+            <span class="timeline-date">October 25th Week, 2026</span>
+          </div>
+          <h3>Flutter Forward</h3>
+          <div class="timeline-sub">Flutter Mobile Workshop</div>
+          <p class="timeline-desc">Master cross-platform mobile app development with Flutter, Dart, state management (Provider/Riverpod), and native plugins.</p>
+          <div class="timeline-foot">
+            <span>Self-supported</span>
+            <span class="timeline-status">Status: Official Plan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Milestone 04 -->
+      <div class="timeline-item theme-navy">
+        <div class="timeline-badge">04</div>
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <span class="timeline-tag">BOOTCAMP</span>
+            <span class="timeline-date">November 20th Week, 2026</span>
+          </div>
+          <h3>Backend Connect</h3>
+          <div class="timeline-sub">APIs & Cloud Systems</div>
+          <p class="timeline-desc">Deep dive into backend architectures, REST & GraphQL APIs, Node.js, Firebase authentication, and cloud databases.</p>
+          <div class="timeline-foot">
+            <span>Self-supported</span>
+            <span class="timeline-status">Status: Official Plan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Milestone 05 -->
+      <div class="timeline-item">
+        <div class="timeline-badge">05</div>
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <span class="timeline-tag">BOOTCAMP</span>
+            <span class="timeline-date">January 20th Week, 2027</span>
+          </div>
+          <h3>AppForge Bootcamp</h3>
+          <div class="timeline-sub">App Store Launch Intensive</div>
+          <p class="timeline-desc">Intensive 3-day app building forge focusing on shipping production-ready mobile applications to Google Play & App Store.</p>
+          <div class="timeline-foot">
+            <span>Self-supported</span>
+            <span class="timeline-status">Status: Official Plan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Milestone 06 -->
+      <div class="timeline-item theme-flagship">
+        <div class="timeline-badge">06</div>
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <span class="timeline-tag">NATIONAL LEVEL HACKATHON</span>
+            <span class="timeline-date">February 20th Week, 2027</span>
+          </div>
+          <h3>SPECTRA'27</h3>
+          <div class="timeline-sub">National Level Symposium & Hackathon Ecosystem</div>
+          <p class="timeline-desc">The crown jewel of MADC: A 36-hour National Level Mobile App Hackathon & Technical Symposium attracting top tech talent across India.</p>
+          
+          <ul class="timeline-bullets">
+            <li>FLAGSHIP NATIONAL LEVEL EVENT</li>
+            <li>36-Hour Non-Stop Hackathon</li>
+            <li>Huge Cash Prizes & National Recognition</li>
+            <li>Industry Leaders & Keynote Mentorship</li>
+          </ul>
+
+          <div class="timeline-foot">
+            <span>Flagship Event</span>
+            <span class="timeline-status">Status: Official Plan</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="section-tight" id="join">
+  <div class="container" style="text-align:center;">
+    <h2 style="font-size:clamp(26px,4vw,38px);" class="reveal">Ready to build something on September 21?</h2>
+    <p style="color:var(--ink-soft); margin-top:14px; max-width:50ch; margin-left:auto; margin-right:auto;" class="reveal">Browse the events, pick your slot, and lock in your spot before registrations close.</p>
+    <div class="hero-actions reveal" style="justify-content:center; margin-top:26px;">
+      <a class="btn btn-primary" href="tech-events.html">Explore Tech Events</a>
+      <a class="btn btn-outline" href="non-tech-events.html">Explore Non-Tech Events</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark">J</span><span>JARVIS'26</span></a>
+        <p>An internet symposium by MADC Club — part of the 2026–2027 events roadmap leading to SPECTRA'27.</p>
+      </div>
+      <div class="footer-links">
+        <h5>SYMPOSIUM</h5>
+        <a href="index.html">Home</a>
+        <a href="tech-events.html">Tech Events</a>
+        <a href="non-tech-events.html">Non-Tech Events</a>
+        <a href="index.html#roadmap">Events Roadmap</a>
+      </div>
+      <div class="footer-contact">
+        <h5>COORDINATORS</h5>
+        <div><b>Dhanushree M</b> · Startup Pitch, Non-Tech</div>
+        <div><a href="tel:8438807326">8438807326</a></div>
+        <div style="margin-top:10px;"><b>Sri Hari Ragunath</b> · Debug the Code</div>
+        <div><a href="tel:9790654497">9790654497</a></div>
+        <div style="margin-top:10px;"><b>Navaneethan</b> · UI/UX, Non-Tech</div>
+        <div><a href="tel:9342512455">9342512455</a></div>
+        <div style="margin-top:10px;"><b>Bhavana R</b> · Stack & Switch</div>
+        <div><a href="tel:8903055603">8903055603</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MADC Club. All rights reserved.</span>
+      <span>Built for JARVIS'26</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/hero3d.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/register-links.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

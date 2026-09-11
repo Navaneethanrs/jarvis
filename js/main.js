@@ -38,6 +38,18 @@
     });
   });
 
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && panel?.classList.contains("open")) {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 900 && panel?.classList.contains("open")) {
+      closeMenu();
+    }
+  });
+
   // reveal-on-scroll
   const revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && revealEls.length) {

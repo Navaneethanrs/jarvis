@@ -9,7 +9,7 @@
    ============================================================ */
 
 const REGISTER_LINKS = {
-  GENERAL: "https://forms.gle/XhM5CRWhWAoThfi56",
+  GENERAL: "tech-events.html",
 
   // Tech events — Slot 1
   STARTUP_PITCH: "https://forms.gle/XhM5CRWhWAoThfi56",
@@ -25,14 +25,19 @@ const REGISTER_LINKS = {
   MINDPOWER_TEST: "https://forms.gle/S6istBdJJywL5u2x8",
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+function setupRegisterLinks() {
   document.querySelectorAll("[data-register]").forEach((el) => {
     const key = el.getAttribute("data-register");
     const link = REGISTER_LINKS[key];
     if (link && link !== "#") {
       el.setAttribute("href", link);
-      el.setAttribute("target", "_blank");
-      el.setAttribute("rel", "noopener");
+      if (link.startsWith("http://") || link.startsWith("https://")) {
+        el.setAttribute("target", "_blank");
+        el.setAttribute("rel", "noopener noreferrer");
+      } else {
+        el.removeAttribute("target");
+        el.removeAttribute("rel");
+      }
     } else {
       el.setAttribute("href", "#");
       el.addEventListener("click", (e) => {
@@ -43,4 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
-});
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", setupRegisterLinks);
+} else {
+  setupRegisterLinks();
+}

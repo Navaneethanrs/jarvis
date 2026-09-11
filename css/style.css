@@ -62,6 +62,10 @@ img{ max-width:100%; display:block; }
 a{ color:inherit; text-decoration:none; }
 ul{ list-style:none; }
 button{ font:inherit; cursor:pointer; }
+a, button, .btn{
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
 
 .container{
   width:100%;
@@ -250,7 +254,6 @@ h1,h2,h3,h4{
 .nav-toggle.open span:nth-child(3){ transform:translateY(-5.6px) rotate(-45deg); }
 
 .mobile-panel{
-  display:none;
   position:fixed;
   top:0; right:0;
   height:100vh;
@@ -259,10 +262,16 @@ h1,h2,h3,h4{
   z-index:99;
   padding:100px 28px 40px;
   transform:translateX(100%);
-  transition:transform .35s cubic-bezier(.2,.8,.2,1);
+  transition:transform .35s cubic-bezier(.2,.8,.2,1), visibility .35s;
   box-shadow:-20px 0 60px rgba(0,0,0,.3);
+  visibility:hidden;
+  pointer-events:none;
 }
-.mobile-panel.open{ transform:translateX(0); }
+.mobile-panel.open{
+  transform:translateX(0);
+  visibility:visible;
+  pointer-events:auto;
+}
 .mobile-panel a{
   display:block;
   color:var(--cream-2);
@@ -273,20 +282,25 @@ h1,h2,h3,h4{
 }
 .mobile-panel .btn{ margin-top:26px; }
 .scrim{
-  display:none;
   position:fixed; inset:0;
   background:rgba(26,17,9,.5);
   z-index:98;
   opacity:0;
-  transition:opacity .3s ease;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .3s ease, visibility .3s ease;
 }
-.scrim.open{ opacity:1; }
+.scrim.open{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
 
 @media (max-width:900px){
   .nav-links{ display:none; }
   .nav-cta .btn{ display:none; }
   .nav-toggle{ display:flex; }
-  .mobile-panel, .scrim{ display:block; }
+  .mobile-panel{ display:block; }
 }
 
 /* ---------- Hero ---------- */
@@ -406,7 +420,7 @@ h1,h2,h3,h4{
 }
 #hero-canvas{
   width:100%; height:100%; display:block;
-  touch-action:none;
+  touch-action:pan-y;
 }
 .stage-hint{
   position:absolute;
@@ -872,6 +886,10 @@ h1,h2,h3,h4{
   justify-content:space-between;
   gap:14px;
   flex-wrap:wrap;
+}
+.event-card-foot .btn{
+  position:relative;
+  z-index:2;
 }
 .coord{
   font-size:12.5px;
